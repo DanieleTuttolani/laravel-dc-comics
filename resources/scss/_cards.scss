@@ -1,0 +1,62 @@
+.top-main-wrapper{
+    background-color: black;
+    min-height: 160px;
+    padding-bottom: 50px;
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 60px;
+    }
+    a{
+        padding: 15px;
+        color: white;
+        background-color: $main-blue;
+        font-size: 23px;
+        position: relative;
+        left: 250px;
+        top: -15px;
+        transition:  0.5s linear;
+        text-decoration: none;
+        &:hover{
+            box-shadow: lightgray 10px 10px;
+        }
+    }
+    .my-card{
+        flex-basis: calc(100% / 6);
+        margin-bottom: 2rem;
+        height: 200px;
+     img{
+      width: 200px;
+     object-fit: cover;
+      object-position: top;
+      padding: 0 10px;
+     }
+      p{
+     color: white;
+     padding: 0 10px;
+     margin: 10px 0
+     }
+    }
+}
+.divider{
+    height: 150px;
+    background-color: $main-blue;
+    .container{
+        display: flex;
+        .my-col{
+            display: flex;
+            flex-basis: calc(100% / 5);
+            height: 100%;
+            align-items: center;
+            .img-wrapper{
+                height: 50px;
+                width: 50px;
+            }
+            p{
+                color: white;
+                font-weight: bold;
+                margin: 0 10px;
+            }
+        }
+    }
+}
