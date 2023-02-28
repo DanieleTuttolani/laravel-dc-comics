@@ -8,8 +8,14 @@ use App\Models\Comic;
 class ComicController extends Controller
 {
     public function comics(){
-        //$comics = Comic::select('title')->get();
+        $comics = Comic::all();
 
-        return view('main');
+        return view('main', compact('comics'));
+    }
+    
+    public function show(string $id){
+        $comics = Comic::all();
+
+        return view('comics.show', compact('comics') );
     }
 }

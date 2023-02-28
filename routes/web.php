@@ -15,3 +15,5 @@ use App\Http\Controllers\ComicController;
 */
 
 Route::get('/', [ComicController::class, 'comics']);
+
+Route::get('comics/{id}' , [ComicController::class, 'show'])->name('comics.show');

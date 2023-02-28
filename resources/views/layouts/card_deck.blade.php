@@ -1,15 +1,15 @@
-@php
-$comics = config('comic')
-@endphp
+
 
 
 @section('content')
 <div class="top-main-wrapper">
-    <a href="#">Current Siries</a>
+    <a class="alt-ref" href="#">Current Siries</a>
     <div class="container">
         @foreach ($comics as $comic)
         <div class="my-card">
-            <img src="{{$comic['thumb']}}" alt="{{$comic['series']}}">
+            <a href=" {{route('comics.show' , $comic->id)}} ">
+                <img src="{{$comic['thumb']}}" alt="{{$comic['series']}}">
+            </a>
             <p>{{ $comic['series'] }}</p>
         </div>
         @endforeach
