@@ -5,7 +5,8 @@
         <div class="text-center">
             <h1>New Comic New Me ;)</h1>
         </div>
-        <form action="">
+        <form action="{{route('comics.store')}}" method="POST">
+            @csrf
             <div class="mb-3 d-flex">
                 {{-- title --}}
                 <input type="text" name="title" id="title" class="form-control col me-4" id="exampleFormControlInput1" placeholder="Insert title">
@@ -31,7 +32,7 @@
                 <textarea class="form-control" id="thumb" name="thumb" rows="1"placeholder="insert comic image link"></textarea>
             </div>
 
-            <button class="btn btn-primary">send</button>
+            <a href="{{route('comics.store')}}" class="btn btn-primary">send</a>
         </form>
     </div>
 @endsection

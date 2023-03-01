@@ -14,6 +14,9 @@
         </div>
         @endforeach
     </div>
+    <div class="text-center">
+        <a href="{{route('comics.create')}}" class="btn btn-primary">Crea un nuovo fumetto</a>
+    </div>
 </div>
 <div class="divider">
     <div class="container h-100">
