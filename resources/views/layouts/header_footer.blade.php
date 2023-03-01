@@ -93,7 +93,7 @@
                     </ul>
                 </div>
                 <div class="img-wrapper">
-                    <img src="./img/dc-logo-bg.png" alt="big dc logo">
+                    <img src="/img/dc-logo-bg.png" alt="big dc logo">
                 </div>
             </div>
         </div>
@@ -106,11 +106,11 @@
                     </div>
                     <div class="right">
                         <H2>FOLLOW US</H2>
-                        <img src="./img/footer-facebook.png" alt="facebook dc">
-                        <img src="./img/footer-periscope.png" alt="periscope dc">
-                        <img src="./img/footer-pinterest.png" alt="pinterest dc">
-                        <img src="./img/footer-twitter.png" alt="twitter dc">
-                        <img src="./img/footer-youtube.png" alt="youtube dc">
+                        <img src="/img/footer-facebook.png" alt="facebook dc">
+                        <img src="/img/footer-periscope.png" alt="periscope dc">
+                        <img src="/img/footer-pinterest.png" alt="pinterest dc">
+                        <img src="/img/footer-twitter.png" alt="twitter dc">
+                        <img src="/img/footer-youtube.png" alt="youtube dc">
     
                     </div>
                 </div>
