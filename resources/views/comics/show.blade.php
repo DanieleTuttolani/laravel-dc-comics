@@ -26,6 +26,8 @@
     </ul>
     <div class="text-center">
         <a href="{{route('comics')}}" class="btn btn-danger">indietro</a>
+        <a href="{{route('comics.edit', $comic->id)}}" class="btn btn-secondary">Modifica</a>
+
     </div>
 </div>
 @endsection
