@@ -25,8 +25,14 @@
         </li>
     </ul>
     <div class="text-center">
-        <a href="{{route('comics')}}" class="btn btn-danger">indietro</a>
+        <a href="{{route('comics')}}" class="btn btn-primary">indietro</a>
         <a href="{{route('comics.edit', $comic->id)}}" class="btn btn-secondary">Modifica</a>
+        <form action="{{route('comics.destroy' , $comic->id)}}" method="POST">
+            @csrf
+            @method('DELETE')
+            <button class="btn btn-danger">Cancella</button>
+        </form>
+
 
     </div>
 </div>

@@ -41,4 +41,9 @@ class ComicController extends Controller
         $comic->update($data);
         return to_route('comics', compact('comic'));
     }
+    public function destroy(Comic $comic){
+        
+        $comic->delete();
+        return to_route('comics');
+    }
 }
