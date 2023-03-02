@@ -2,6 +2,8 @@
 
 
 @section('content')
+<div class="my-5">
+
     <ul>
         <li>
             Titolo: {{$comic ->title}}
@@ -22,4 +24,8 @@
             Artisti: {{$comic ->artists}}
         </li>
     </ul>
+    <div class="text-center">
+        <a href="{{route('comics')}}" class="btn btn-danger">indietro</a>
+    </div>
+</div>
 @endsection

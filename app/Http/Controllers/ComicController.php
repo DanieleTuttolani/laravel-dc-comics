@@ -27,10 +27,10 @@ class ComicController extends Controller
         $data = $request->all();
 
         $new_comic= new Comic();
-        $new_comic -> fill($data);
-        $new_comic -> save();
+        $new_comic->fill($data);
+        $new_comic->save();
 
-        return to_route('main');
+        return to_route('main' , compact('new_comic'));
     }
 
 }

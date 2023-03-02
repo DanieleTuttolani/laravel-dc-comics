@@ -5,15 +5,23 @@
         <div class="text-center">
             <h1>New Comic New Me ;)</h1>
         </div>
-        <form action="{{route('comics.store')}}" method="POST">
+        <form action="{{route('comics.store')}}" method="post">
             @csrf
             <div class="mb-3 d-flex">
                 {{-- title --}}
-                <input type="text" name="title" id="title" class="form-control col me-4" id="exampleFormControlInput1" placeholder="Insert title">
+                <input type="text" name="title" id="title" class="form-control col me-4" id="exampleFormControlInput1" placeholder="Insert title" required>
                 {{-- price --}}
-                <input type="number" name="price" id="price" class="form-control col me-4" id="exampleFormControlInput1" placeholder="Insert Price" min="0" >
+                <input type="number" name="price" id="price" class="form-control col me-4" id="exampleFormControlInput1" placeholder="Insert Price" required min="0" >
                 {{-- series --}}
-                <input type="text" name="series" id="series" class="form-control col me-4" id="exampleFormControlInput1" placeholder="Inser series">
+                <input type="text" name="series" id="series" class="form-control col me-4" id="exampleFormControlInput1" placeholder="Inser series" required>
+            </div>
+            <div class="mb-3 d-flex">
+                {{-- date --}}
+                <input type="text" name="sale_date" id="sale_date" class="form-control col me-4" id="exampleFormControlInput1" placeholder="Inser sale data">
+
+                {{-- type --}}
+                <input type="text" name="type" id="type" class="form-control col me-4" id="exampleFormControlInput1" placeholder="Inser type">
+
             </div>
             {{-- description --}}
             <div class="mb-3">
@@ -29,10 +37,11 @@
             </div>
             {{-- thumb --}}
             <div class="mb-3">
-                <textarea class="form-control" id="thumb" name="thumb" rows="1"placeholder="insert comic image link"></textarea>
+                <input type="url" class="form-control" id="thumb" name="thumb" placeholder="insert comic image link"></input> 
             </div>
 
-            <a href="{{route('comics.store')}}" class="btn btn-primary">send</a>
+            <button class="btn btn-primary">send</button>
         </form>
+        <a href="{{route('comics')}}" class="btn btn-danger">indietro</a>
     </div>
 @endsection
